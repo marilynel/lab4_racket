@@ -44,10 +44,14 @@
 ; intersection = grab only elements that occur in both lists
 ; return type = list
 (define (intersect lst1 lst2)
+  (cond ((empty? lst1) lst1) ; if either list is empty, return the empty one
+        ((empty? lst2) lst2)
+        
   ; if either list is empty, return empty list
   ; make a new list?
   ; use member --> if element in 1 is in 2, add to new list
   ; go trhough each item in the list
+  ; when done, return new list
 )
 
 
